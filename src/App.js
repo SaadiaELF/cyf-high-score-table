@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="container">
       <h1 className="heading"> High Score by Country</h1>
+      <button className="btn btn--primary">Order Asc/Desc</button>
       {sortedCountries.map((country, index) => (
         <Card key={index} country={country.name} scores={country.scores} />
       ))}
